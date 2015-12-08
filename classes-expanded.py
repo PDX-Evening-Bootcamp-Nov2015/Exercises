@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+
+class Dog:
+    kind = 'canine'
+    tricks = []             # mistaken use of a class variable
+
+    def __init__(self, name):
+        self.name = name
+
+    def add_trick(self, trick):
+
+# In[28]:
+​
+dog1 = Dog("fido")
+
+# In[29]:
+
+dog2 = Dog("sparky")
+
+# In[30]:
+
+dog1.kind
+
+=======
 ​
 # coding: utf-8
 ​
@@ -29,6 +53,7 @@ dog2 = Dog("sparky")
 dog1.kind
 ​
 ​
+>>>>>>> master
 # In[31]:
 ​
 dog2.kind
