@@ -1,0 +1,38 @@
+.tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+
+.tab-links a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#7FB5DA;
+    font-size:18px;
+    color:#4c4c4c;
+    text-decoration:none;
+}
+
+.tab-links a:hover {
+    background:#a7cce5;
+}
+
+/* Tab styling when it is active */
+li.active a, li.active a:hover {
+    background:#fff;
+    color:#4c4c4c;
+}
+
+.tab-content {
+    padding:50px;
+}
+
+/* hide all tabs */
+.tab {
+    display:none;
+}
+/* show only active tab*/
+.tab.active {
+    display:block;
+}
