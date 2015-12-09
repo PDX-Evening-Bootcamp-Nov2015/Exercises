@@ -7,17 +7,28 @@
     <title>Lists </title>
   </head>
   <body>
-    <ul>
+    <ul id="todo_list">
       <li class=default> Item 1 </li>
       <li class=default> Item 2 </li>
-    </ul>
+      <li id="test_changing_me" class=default> XXX CHANGE ME XXX </li>
+  </ul>
 
-    <form >
-      <input type="text" id="new_list_text">
-      <button onclick="hello()" id="add_item">
+  <form>
+      <!-- this is the text box, where you put the todo-list text -->
+      <input type="text" id="new_list_text" />
+
+      <!-- this is the button you hit to actually add the item -->
+      <button onclick="hello(event);" id="add_item">
+        <!--            ^^^ This calls the hello(event) method from list.js -->
         Add Item
       </button>
-    </form >
+
+      <button onclick="goodbye(event);" id="remove_top_item">
+        <!--           ^^^ This calls the goodbye(event) method from list.js -->
+        Remove Top Item
+      </button>
+    </form>
+
     <script src="list.js">
     </script>
 
