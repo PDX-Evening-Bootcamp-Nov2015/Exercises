@@ -14,7 +14,7 @@ var hello = function (event){
   new_li.textContent = new_list_text;
 
   /* assign a new automatic id */
-  new_li_id = next_list_item_id();
+  var new_li_id = next_list_item_id();
   new_li.setAttribute("id", new_li_id);
   new_li_self_destruct = document.createElement("button");
   new_li_self_destruct.textContent = "Remove Me";
@@ -31,14 +31,6 @@ var remove_li = function(li_id) {
   victim.parentNode.removeChild(victim);
 };
 
-var goodbye = function (event){
-  event.preventDefault(); // stop page reload.
-
-  var ul = document.getElementById("todo_list");
-  var first_todo = ul.children[0];
-  ul.removeChild(first_todo);
-};
-
 var next_list_item_id = (function () {
   var counter = 0;
   return function () {
@@ -46,3 +38,11 @@ var next_list_item_id = (function () {
     return "li_autonumber_" + counter;
   }
 }());
+
+var goodbye = function (event){
+  event.preventDefault(); // stop page reload.
+
+  var ul = document.getElementById("todo_list");
+  var first_todo = ul.children[0];
+  ul.removeChild(first_todo);
+};
