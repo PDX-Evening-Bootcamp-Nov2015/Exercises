@@ -17,7 +17,7 @@ Students will create all of the HTML, CSS, and Javascript for this assignment, f
 
 ## Required Functionality
 - On page load, a quote loads from the API and is displayed on the web page.
-- When user clicks the "Get Inspired" button, a new quote is fetched from the API and is displayed on the web page. (Note: the API gives only one quote a minute.)
+- When user clicks the "Get Inspired" button, a new quote is fetched from the API and is displayed on the web page. (Note: the API gives only one quote every five minutes.)
 - The web page's design must be inspired by the below illustration (get creative).
 <img src="hawnuhlee_inspiring.jpg" width= "90%" style="max-width: 500px" />
 - Credit for the site's design inspiration must be given somewhere on the site, with a link to Hannah's [Instagram](https://www.instagram.com/hawnuhlee/).
